@@ -10,9 +10,14 @@ const tabs = [
 ];
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState(
-    tabs.find((tab) => window?.location?.pathname === tab.href)?.id
-  );
+  let currentTab = "";
+  if (typeof window !== "undefined") {
+    currentTab = tabs.find(
+      (tab) => window?.location?.pathname === tab.href
+    )?.id;
+  }
+
+  const [activeTab, setActiveTab] = useState(currentTab);
 
   return (
     <nav className="gap-2 max-w-[1000px] mb-12 p-2 mx-auto text-center">
