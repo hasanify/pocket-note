@@ -18,7 +18,7 @@ Welcome to PocketNote, your go-to note-taking solution built with Next.js, Pocke
 
 ## Getting Started 🚀
 
-1. Clone the repo: `git clone https://github.com/your-username/PocketNote.git`
+1. Clone the repo: `git clone https://github.com/hasanify/PocketNote.git`
 
 2. Install dependencies: `npm install`
 
