@@ -14,10 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={spartan.className}>
-        <section className="p-4 ">
-          <Navbar />
-          {children}
-        </section>
+        <Navbar />
+        <section className="p-4 ">{children}</section>
 
         <Footer />
       </body>
